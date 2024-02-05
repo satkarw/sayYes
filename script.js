@@ -28,7 +28,7 @@ yes.addEventListener("click", clickedYes);
 function clickedNo() {
   count += 10;
   clickCount++;
-  if (clickCount < 6) {
+  if (clickCount < 5) {
     count3 -= 3;
     yes.style.height = `${count}px`;
     yes.style.width = `${count + 25}px`;
