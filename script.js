@@ -28,7 +28,7 @@ yes.addEventListener("click", clickedYes);
 function clickedNo() {
   count += 10;
   clickCount++;
-  if (clickCount < 8) {
+  if (clickCount < 6) {
     count3 -= 3;
     yes.style.height = `${count}px`;
     yes.style.width = `${count + 25}px`;
@@ -57,14 +57,16 @@ function clickedNo() {
 
 function clickedYes() {
   document.querySelector(".container").innerHTML = ` 
+  
+    <audio autoplay loop>
+        <source src="chipi.mp3" type="audio/mp3" />
+      </audio>
 
     <img src="happy1.gif" alt="" class="gif-happy" />
 
     <p class="happy">Ya Huuuuuu</p>
     
-    <audio autoplay loop>
-        <source src="chipi.mp3" type="audio/mp3" />
-      </audio>
+  
     
 `;
 }
