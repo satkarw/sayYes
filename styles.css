@@ -1,0 +1,83 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #fcf2f2;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ask {
+  align-self: center;
+  font-size: 20px;
+}
+.container button {
+  margin: 10px;
+  border: 0px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.yes,
+.yes1 {
+  color: white;
+  background-color: green;
+}
+
+.yes1 {
+  width: 120px;
+  height: 80px;
+  animation: change 0.3s ease infinite alternate;
+}
+@keyframes change {
+  from {
+    background-color: green;
+  }
+  to {
+    background-color: red;
+  }
+}
+
+.no {
+  color: white;
+  background: rgb(21, 21, 21);
+}
+
+.gif {
+  width: 80px;
+  align-self: center;
+}
+
+.gif-angry {
+  width: 130px;
+  align-self: center;
+}
+
+.gif-happy {
+  width: 140px;
+}
+
+.happy {
+  font-size: 30px;
+  animation: happy 0.3s ease infinite alternate;
+}
+
+@keyframes happy {
+  0% {
+    color: rgb(182, 104, 104);
+    font-size: 30px;
+  }
+  50% {
+    color: rgb(123, 54, 54);
+    font-size: 20px;
+  }
+  100% {
+    color: rgb(117, 117, 171);
+    font-size: 40px;
+  }
+}
