@@ -46,7 +46,7 @@ function clickedNo() {
     document.querySelector(".container").innerHTML = ` 
      <img src="angry1.gif" alt="" class="gif-angry" />
 
-    <p class="ask">Will you be my valentine?</p>
+    <p class="ask">Will you go on a date with me ?</p>
     <div class="btn-container">
       <button class="yes1" onclick='clickedYes()'>Yes</button>
     
